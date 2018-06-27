@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-
 	{{-- If the pageTitle section exists, show it --}}
 	@hasSection('pageTitle')
 	<title>{{ env('APP_NAME') }} - @yield('pageTitle', env('APP_NAME'))</title>
@@ -13,13 +12,20 @@
 	<title>{{ env('APP_NAME') }}</title>
 	@endif
 
+	<link rel="stylesheet" href="{{ asset('/css/main.css') }}">
+
+	<!-- CSRF Token -->
+	<meta name="csrf-token" content="{{ csrf_token() }}">
+
 </head>
 <body>
-	@hasSection('pageContent')
+	{{-- @include('partials.adminNav') --}}
+
+	<div class="top-menu container bg-blue-dark">
+		Test
+	</div> <!-- /.container -->
+
 	@yield('pageContent')
-	@else
-	<p>Something has gone wrong! It'd be great if <a href="{{ env('APP_ADMIN') }}">you'd let us know</a>!</p>
-	@endif
 
 	@if(App::environment('local'))
 	<!-- development version, includes helpful console warnings -->
