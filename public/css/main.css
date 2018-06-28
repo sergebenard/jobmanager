@@ -713,6 +713,18 @@ table {
           appearance: none;
 }
 
+.hover\:appearance-none:hover {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.focus\:appearance-none:focus {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
 .bg-fixed {
   background-attachment: fixed;
 }
@@ -6385,6 +6397,26 @@ table {
   * @import "utilities/skew-transforms";
   */
 
+nav.main-menu a span {
+  display: none;
+}
+
+nav.main-menu a:hover span {
+  display: block;
+}
+
+nav.main-menu a span.triangle:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-top: 15px solid #6cb2eb;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  top: 65px;
+}
+
 @media (min-width: 576px) {
   .sm\:list-reset {
     list-style: none;
@@ -6392,6 +6424,18 @@ table {
   }
 
   .sm\:appearance-none {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  }
+
+  .sm\:hover\:appearance-none:hover {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  }
+
+  .sm\:focus\:appearance-none:focus {
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
@@ -12043,6 +12087,18 @@ table {
             appearance: none;
   }
 
+  .md\:hover\:appearance-none:hover {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  }
+
+  .md\:focus\:appearance-none:focus {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  }
+
   .md\:bg-fixed {
     background-attachment: fixed;
   }
@@ -17689,6 +17745,18 @@ table {
             appearance: none;
   }
 
+  .lg\:hover\:appearance-none:hover {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  }
+
+  .lg\:focus\:appearance-none:focus {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  }
+
   .lg\:bg-fixed {
     background-attachment: fixed;
   }
@@ -23330,6 +23398,18 @@ table {
   }
 
   .xl\:appearance-none {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  }
+
+  .xl\:hover\:appearance-none:hover {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  }
+
+  .xl\:focus\:appearance-none:focus {
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;

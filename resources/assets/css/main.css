@@ -60,3 +60,25 @@
   * @import "utilities/background-patterns";
   * @import "utilities/skew-transforms";
   */
+
+nav.main-menu a span {
+	display: none;
+}
+
+nav.main-menu a:hover span {
+	display: block;
+}
+
+nav.main-menu a span.triangle:after {
+	content:'';
+	display:block;
+	width:0;
+	height:0;
+	position:absolute;
+
+	border-top: 15px solid #6cb2eb;
+	border-left: 15px solid transparent;
+	border-right:15px solid transparent;
+
+	top:65px;
+}

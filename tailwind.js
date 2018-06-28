@@ -860,7 +860,7 @@ module.exports = {
   */
 
   modules: {
-    appearance: ['responsive'],
+    appearance: ['responsive', 'hover', 'focus'],
     backgroundAttachment: ['responsive'],
     backgroundColors: ['responsive', 'hover', 'focus'],
     backgroundPosition: ['responsive'],
