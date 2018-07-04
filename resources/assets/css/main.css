@@ -61,15 +61,15 @@
   * @import "utilities/skew-transforms";
   */
 
-nav.main-menu a span {
+  nav.top-menu a span.triangle {
 	display: none;
 }
 
-nav.main-menu a:hover span {
+nav.top-menu a:hover span.triangle {
 	display: block;
 }
 
-nav.main-menu a span.triangle:after {
+nav.top-menu a span.triangle:after {
 	content:'';
 	display:block;
 	width:0;
@@ -80,5 +80,7 @@ nav.main-menu a span.triangle:after {
 	border-left: 15px solid transparent;
 	border-right:15px solid transparent;
 
-	top:65px;
+	top:64px;
 }
+
+
